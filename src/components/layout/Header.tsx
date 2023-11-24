@@ -17,7 +17,6 @@ import {
     rem,
     useMantineTheme,
 } from '@mantine/core';
-import reactImg from '../../assets/react.svg'
 import { useDisclosure } from '@mantine/hooks';
 import {
     IconNotification,
@@ -29,6 +28,7 @@ import {
     IconChevronDown,
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
+import reactImg from "../../assets/react.svg";
 
 const mockdata = [
     {
@@ -90,7 +90,7 @@ export function Header() {
         <Box pb={120}>
             <header className={classes.header}>
                 <Group justify="space-between" h="100%">
-                    <img src={reactImg} alt='react image' />
+                    <img src={reactImg} alt='react image'/>
                     <Group h="100%" gap={0} visibleFrom="sm">
                         <a href="#" className={classes.link}>
                             Home
